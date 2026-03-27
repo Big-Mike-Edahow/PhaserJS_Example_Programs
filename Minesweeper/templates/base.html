@@ -1,0 +1,29 @@
+<!-- base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.js"></script>
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet">
+    <link href="../static/images/site/favicon.ico" type="image/png" rel="icon">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">Home 🎮</a>
+        <h1>Phaser - <b>Minesweeper!</b> 💣</h1>
+        <a href="{{ url_for('about') }}">About ℹ️</a>
+    </nav>
+    <main>
+        {% block content %}
+
+        {% endblock %}
+    </main>
+</body>
+
+</html>
+
