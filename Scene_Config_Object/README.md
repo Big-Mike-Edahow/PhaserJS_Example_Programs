@@ -1,0 +1,1 @@
+# PhaserJS Scene Config Object
